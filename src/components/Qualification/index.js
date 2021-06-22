@@ -3,7 +3,7 @@ import SmallHeading from "../UI/SmallHeading";
 import MediumHeading from "../UI/MediumHeading";
 import Button from "../UI/Button";
 import Tile from "../UI/Tile";
-import me from "../../assets/images/me.jpg";
+import tallboy from "../../assets/images/tallboy.jpg";
 
 import "./style.css";
 
@@ -15,14 +15,14 @@ import "./style.css";
 const Qualification = (props) => {
   return (
     <div className="container" style={{ padding: "50px 0" }}>
-      <SmallHeading text="Qualifications" />
-      <MediumHeading text={"My Education"} />
+      <MediumHeading text="A little bit about me...." />
+      <SmallHeading text={"My Education"} />
       <div
         className="flexRow flexCol align-center justify-sb"
         style={{ margin: "50px 0" }}
       >
         <div data-aos="fade-up-right">
-          <img src={me} alt="" />
+          <img src={tallboy} alt="" />
           <div
             style={{
               background: "#fff",
@@ -37,25 +37,25 @@ const Qualification = (props) => {
               <Button label="Hire Me" />
             </div>
             <div className="mlr-10">
-              <Button label="Download CV" inverse={true} />
+              <Button label="Useless Button" inverse={true} />
             </div>
           </div>
         </div>
         <div>
           <Tile
-            title="EBRO"
-            mediumTitle="Plant Physiology / Organic Chemistry"
-            desc="lorem ipsum text"
+            title="Education"
+            mediumTitle="B.S. Plant Physiology / M.S. Organic Chemistry"
+            desc="Research based on American Chestnut / American Clandestine"
           />
           <Tile
-            title="Ebro"
-            mediumTitle="Aspiring front end developer"
-            desc="lorem ipsum text"
+            title="Future Goals and Aspirations"
+            mediumTitle="Travel, front-end development, ride more bikes"
+            desc="in no particular order..."
           />
           <Tile
-            title="Ebro"
+            title="Current Digs"
             mediumTitle="NYC bike messenger"
-            desc="lorem ipsum text"
+            desc="Working hard or hardly workin"
           />
         </div>
       </div>
